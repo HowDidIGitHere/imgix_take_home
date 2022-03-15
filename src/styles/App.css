@@ -14,5 +14,21 @@
 }
 
 #bridge {
-  width: 100%;
+  width: 60rem;
+}
+
+/* IMAGE MANIPULATION FORM CSS */
+
+.image-overlay-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-overlay,
+.blend-color-overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
