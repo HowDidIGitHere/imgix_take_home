@@ -6,32 +6,27 @@ import ImageManipulationForm from './forms/ImageManipulationForm';
 function App() {
 
   const [formFields, setFormFields] = useState({
-    txt: "",
-    blend: "#4400bb"
+    txt: "Check out this sweet bridge",
+    txtcolor: "#fff",
+    txtsize: "64",
+    txtalign: "center middle",
+    txtfit: "max",
+    blend: "#4400bb",
+    blendalpha: "50",
+    blendmode: "normal",
   });
-
-  const handleUserInput = type => {
-    return (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      setFormFields({ ...formFields, [type]: e.currentTarget.value });
-    };
-  };
 
   return (
     <div className="App">
       <header className="App-header">
-        <Imgix 
-          src="https://assets.imgix.net/unsplash/bridge.jpg" 
-          sizes="60rem"
-          imgixParams={{ 
-            txt: formFields.txt,
-            txtcolor: "white",
-            blend: formFields.blend
-          }}
-          alt="golden-gate-bridge"
-        />
-        <ImageManipulationForm formFields={formFields} setFormFields={setFormFields} handleUserInput={handleUserInput} />
+        <div className="image-wrapper">
+          <Imgix 
+            src="https://assets.imgix.net/unsplash/bridge.jpg" 
+            imgixParams={formFields}
+            alt="golden-gate-bridge"
+          />
+        </div>
+        <ImageManipulationForm formFields={formFields} setFormFields={setFormFields} />
       </header>
     </div>
   );
