@@ -3,25 +3,29 @@
 .image-overlay-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-
-  margin: 0 0 0 10px;
-  padding: 20px;
-  background-color: lightgrey;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 640px;
+  padding-top: 10px;
+  background-color: #e2e2e2;
   border-radius: 10px;
-  border: grey 1px solid;
+}
 
-  height: 200px;
+.form-element-row {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 36px;
 }
 
 .text-overlay {
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 2px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
   font-size: 20px;
-  color: grey;
+  color: #495057;
 }
 
 .blend-color-overlay {
@@ -29,9 +33,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 2px;
   font-size: 20px;
-  color: grey;
+  color: #495057;
 }
 
 .color-input-wrapper {
@@ -40,12 +46,56 @@
 }
 
 #txt-input {
-  resize: none;
+  cursor: pointer;
+  resize: vertical;
+  border-radius: 5px;
+  min-height: 50px;
+  max-height: 300px;
+}
+
+#txt-input:focus { 
+  border: #80bdff 1px solid;
+  outline: 0;
+  color: #495057;
+  background-color: #fff;
+}
+
+#blend-input {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#blend-input:focus {
+  border: #80bdff 1px solid;
 }
 
 #blend-value {
+  cursor: pointer;
   margin-left: 5px;
-  color: grey;
+  color: #495057;
   font-size: 16px;
   align-self: center;
+}
+
+.button {
+  cursor: pointer;
+  border: #1a6dcd 1px solid;
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 0 0 10px 10px;
+  background-color: #1a6dcd;
+  color: #fff;
+  font-size: 22px;
+  padding: 6px;
+}
+
+.button:hover {
+  background-color: #0079d3;
+  border-color: #0079d3;
+}
+
+.button:active {
+  background-color: #3986d5;
+  border-color: #3986d5;
 }
