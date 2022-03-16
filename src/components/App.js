@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import '../styles/App.css';
-import '../styles/image.css'
+import React, { useState } from "react";
+import "../styles/App.css";
+import "../styles/image.css";
 import Imgix from "react-imgix";
-import ImageManipulationForm from './forms/ImageManipulationForm';
+import ImageManipulationForm from "./forms/ImageManipulationForm";
 
 function App() {
   const DEFAULT_IMGIX_WIDTH = 640;
@@ -14,7 +14,7 @@ function App() {
     txtfit: "max",
     blend: "#4400bb",
     blendalpha: "50",
-    blendmode: "normal",
+    blendmode: "normal"
   });
 
   return (
@@ -22,13 +22,16 @@ function App() {
       <header className="App-header">
         <h1 className="title">See What Imgix Can Do!</h1>
         <div className="image-wrapper">
-          <Imgix 
-            src="https://assets.imgix.net/unsplash/bridge.jpg" 
+          <Imgix
+            src="https://assets.imgix.net/unsplash/bridge.jpg"
             imgixParams={imgSettings}
             width={DEFAULT_IMGIX_WIDTH}
             alt="golden-gate-bridge"
           />
-          <ImageManipulationForm imgSettings={imgSettings} setImgSettings={setImgSettings} />
+          <ImageManipulationForm
+            imgSettings={imgSettings}
+            setImgSettings={setImgSettings}
+          />
         </div>
       </header>
     </div>
