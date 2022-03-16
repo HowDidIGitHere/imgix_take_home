@@ -5,11 +5,11 @@ import Imgix from "react-imgix";
 import ImageManipulationForm from './forms/ImageManipulationForm';
 
 function App() {
-
+  const DEFAULT_IMGIX_WIDTH = 640;
   const [imgSettings, setImgSettings] = useState({
     txt: "Check out this sweet bridge!",
     txtcolor: "#fff",
-    txtsize: "64",
+    txtsize: "48",
     txtalign: "center middle",
     txtfit: "max",
     blend: "#4400bb",
@@ -25,6 +25,7 @@ function App() {
           <Imgix 
             src="https://assets.imgix.net/unsplash/bridge.jpg" 
             imgixParams={imgSettings}
+            width={DEFAULT_IMGIX_WIDTH}
             alt="golden-gate-bridge"
           />
           <ImageManipulationForm imgSettings={imgSettings} setImgSettings={setImgSettings} />
