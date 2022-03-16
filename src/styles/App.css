@@ -4,12 +4,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 20vh;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
 .title {
-  color: lightgrey;
+  color: #fff;
+}
+
+.image-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

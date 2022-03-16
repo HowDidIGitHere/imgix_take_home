@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/App.css";
-import "../styles/image.css";
 import Imgix from "react-imgix";
 import ImageManipulationForm from "./forms/ImageManipulationForm";
 
