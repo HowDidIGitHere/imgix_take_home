@@ -1,0 +1,13 @@
+/* IMAGE SIZING */
+
+.image-wrapper {
+  margin-top: 10px;
+  width: 640px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}

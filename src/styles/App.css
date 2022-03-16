@@ -13,33 +13,6 @@
   color: white;
 }
 
-/* IMAGE SIZING */
-
-.image-wrapper {
-  width: 640px;
-}
-
-img {
-  width: 100%;
-}
-
-/* IMAGE MANIPULATION FORM CSS */
-
-.image-overlay-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-overlay {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.blend-color-overlay {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.title {
+  color: lightgrey;
 }

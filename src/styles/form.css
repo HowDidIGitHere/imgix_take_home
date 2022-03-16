@@ -1,0 +1,51 @@
+/* IMAGE MANIPULATION FORM CSS */
+
+.image-overlay-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  margin: 0 0 0 10px;
+  padding: 20px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: grey 1px solid;
+
+  height: 15vh;
+}
+
+.text-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  font-size: 20px;
+  color: grey;
+}
+
+.blend-color-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  font-size: 20px;
+  color: grey;
+}
+
+.color-input-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#txt-input {
+  resize: none;
+}
+
+#blend-value {
+  margin-left: 5px;
+  color: grey;
+  font-size: 16px;
+  align-self: center;
+}
